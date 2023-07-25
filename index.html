@@ -27,11 +27,11 @@
       }
     </style>
   </head>
-  <body class="font-lato pl-2 md:pl-4">
+  <body class="font-lato ">
     <!-- navbar section -->
     <section>
       <nav class="container mx-auto">
-        <div class="navbar bg-base-100 lg:bg-[#F85559] rounded-full lg:p-5 mt-12">
+        <div class="navbar bg-base-100 lg:bg-[#F85559] rounded-full lg:p-5 mt-5 lg:mt-12">
           <div class="navbar-start">
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1 text-white">
@@ -42,7 +42,7 @@
               </ul>
             </div>
           </div>
-          <a class=" w-[1100px] lg:w-72 text-10 md:pr-63 lg:text-white">
+          <a class=" w-[10000px] lg:w-72 text-10 md:pr-63 lg:text-white">
             <nav class="flex items-center ">
               <img src="images/logo.png" alt="" />
               <h2 class=" md:text-2xl lg:text-3xl">Fruit Burst</h2>
@@ -51,7 +51,7 @@
 
           <div class="navbar-end">
             <a class="pr-5"
-              ><div class="invisible lg:visible relative">
+              ><div class="hidden lg:block relative">
                 <input
                   type="text"
                   placeholder="search here"
@@ -79,14 +79,17 @@
                 </button></div
             ></a>
             <div class="dropdown">
-              <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <label tabindex="0" class="btn pl-14 md:pr-14 lg:pr-0 btn-ghost lg:hidden">
                 <i class="fa-solid fa-bars" style=" color: #000000;"></i>
               </label>
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content mt- z-[1] p-2 shadow bg-base-100 rounded-box w-1"
+                class="menu menu-sm dropdown-content mt- z-[1] p-2 shadow bg-base-100 rounded-box "
               >
                 <li><a>Home</a></li>
+                <li><a>Shop</a></li>
+                <li><a>About Us</a></li>
+                <li><a>All Fruits</a></li>
               </ul>
             </div>
           </div>
@@ -94,7 +97,7 @@
       </nav>
     </section>
     <!-- slide section -->
-    <section class="container mx-auto mt-14 px-5">
+    <section class="container mx-auto mt-2 lg:mt-14 px-5">
       <div class="carousel w-full">
         <!-- slide one -->
         <div id="slide1" class="carousel-item relative w-full">
@@ -114,7 +117,7 @@
                   <p class="mb-5 font-normal">
                     We supply highly quality organic products
                   </p>
-                  <button class="btn bg-[#F85559] border-none text-white">
+                  <button class="btn  bg-[#F85559] border-none text-white">
                     Shop Now
                   </button>
                 </div>
@@ -156,7 +159,7 @@
           <div
             class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
           >
-            <a href="#slide1" class="btn btn-circle  bg-black text-white">❮</a>
+            <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a>
             <a href="#slide3" class="btn btn-circle  bg-black text-white">❯</a>
           </div>
         </div>
@@ -188,7 +191,7 @@
           <div
             class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
           >
-            <a href="#slide2" class="btn btn-circle  bg-black text-white">❮</a>
+            <a href="#slide2" class="btn btn-circle text-sm bg-black text-white">❮</a>
             <a href="#slide4" class="btn btn-circle  bg-black text-white">❯</a>
           </div>
         </div>
@@ -220,7 +223,32 @@
           </div>
         </div>
       </div>
-    </section>
-
-  </body>
+      <!-- fruits section  -->
+    <div class="hidden lg:block">
+      <div class=" flex justify-center gap-20 bg-white rounded-xl py-12 px-20 shadow-lg -mt-28 ml-40 absolute  border">
+        <div>
+          <img src="images/fruit1.png" alt="">
+          <h3 class="text-center">Red Globe Grapes</h3>
+        </div>
+        <div>
+          <img src="images/fruit2.png" alt="">
+          <h3 class="text-center">Orange</h3>
+        </div>
+        <div>
+          <img src="images/fruit3.png" alt="">
+          <h3 class="text-center">Mango</h3>
+        </div>
+        <div>
+          <img src="images/fruit4.png" alt="">
+          <h3 class="text-center">Strawberry</h3>
+        </div>
+        <div>
+          <img src="images/fruit5.png" alt="">
+          <h3 class="text-center"> Pomegranate</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+</body>
 </html>
